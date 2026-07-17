@@ -1,33 +1,46 @@
-/* =====================================
-   NURSING PORTFOLIO
-   BLUE MEDICAL UNIVERSITY STYLE
-===================================== */
+/* =================================
+   NATTHADA NURSING PORTFOLIO
+   UNIVERSITY BLUE STYLE
+================================= */
 
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Kanit',sans-serif;
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+font-family:'Kanit',sans-serif;
+
 }
+
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
 
 
 body{
 
-    background:#f4fbff;
+background:#f8fdff;
 
-    color:#194c6b;
+color:#173f55;
 
 }
 
 
 
-/* ==========================
- NAVBAR
-========================== */
+
+
+/* =========================
+HEADER
+========================= */
 
 
 header{
@@ -38,7 +51,7 @@ top:0;
 
 width:100%;
 
-z-index:999;
+z-index:1000;
 
 }
 
@@ -46,13 +59,15 @@ z-index:999;
 
 nav{
 
+
 height:80px;
 
 display:flex;
 
+align-items:center;
+
 justify-content:space-between;
 
-align-items:center;
 
 padding:0 8%;
 
@@ -60,11 +75,6 @@ padding:0 8%;
 background:rgba(255,255,255,.85);
 
 backdrop-filter:blur(15px);
-
-
-box-shadow:
-
-0 5px 25px rgba(0,140,200,.15);
 
 
 }
@@ -77,17 +87,9 @@ font-size:30px;
 
 font-weight:700;
 
-color:#159bd3;
+color:#008dcc;
 
 }
-
-
-.logo::before{
-
-content:"🩺 ";
-
-}
-
 
 
 
@@ -101,7 +103,7 @@ gap:35px;
 
 
 
-nav li{
+nav ul li{
 
 list-style:none;
 
@@ -109,11 +111,11 @@ list-style:none;
 
 
 
-nav a{
+nav ul li a{
 
 text-decoration:none;
 
-color:#24556e;
+color:#28566c;
 
 font-weight:500;
 
@@ -122,128 +124,111 @@ transition:.3s;
 }
 
 
-nav a:hover{
 
-color:#00a6e8;
+nav ul li a:hover{
+
+color:#00aeea;
 
 }
 
 
 
 
-/* ==========================
- HERO
-========================== */
 
 
-.hero{
+/* =========================
+HOME
+========================= */
+
+
+.home{
 
 
 min-height:100vh;
 
+
 display:flex;
 
+
 align-items:center;
+
 
 justify-content:space-between;
 
 
-padding:120px 8%;
+
+padding:120px 10% 50px;
+
 
 
 background:
 
+
 linear-gradient(
 
-135deg,
+120deg,
 
-#dff6ff,
+#e5f8ff,
 
-#ffffff,
-
-#c5edff
+#ffffff
 
 );
 
 
-position:relative;
+}
 
-overflow:hidden;
+
+
+
+
+.home-text{
+
+max-width:600px;
+
+}
+
+
+
+.sub{
+
+
+color:#00a3df;
+
+font-size:18px;
+
+letter-spacing:3px;
 
 
 }
 
 
 
-.hero::after{
+.home-text h1{
 
 
-content:"";
+font-size:70px;
 
-position:absolute;
 
-width:600px;
+line-height:1.2;
 
-height:600px;
 
-background:#8bdcff;
-
-border-radius:50%;
-
-right:-200px;
-
-bottom:-200px;
-
-opacity:.35;
+color:#006fa8;
 
 
 }
 
 
 
-
-.hero-text{
-
-z-index:2;
-
-}
-
-
-
-.hero-text h1{
-
-
-font-size:55px;
-
-color:#087cb5;
-
-
-}
-
-
-
-.hero-text h2{
-
-
-font-size:45px;
-
-color:#48b9e8;
-
-letter-spacing:4px;
-
-
-}
-
-
-
-.hero-text p{
+.home-text p{
 
 
 font-size:20px;
 
-margin:25px 0;
 
-color:#567b8d;
+margin:30px 0;
+
+
+color:#527083;
 
 
 }
@@ -251,78 +236,68 @@ color:#567b8d;
 
 
 
-
-.btn{
-
-
-background:
-
-linear-gradient(
-
-45deg,
-
-#009fe3,
-
-#54d3ff
-
-);
+.home-text a{
 
 
-padding:15px 40px;
+display:inline-block;
 
-border-radius:50px;
+
+padding:15px 35px;
+
+
+background:#008dcc;
 
 
 color:white;
 
+
+border-radius:40px;
+
+
 text-decoration:none;
 
 
-box-shadow:
-
-0 10px 30px rgba(0,150,220,.35);
-
-
-transition:.4s;
+transition:.3s;
 
 
 }
 
 
 
-.btn:hover{
+.home-text a:hover{
 
-transform:scale(1.08);
+
+background:#005f8f;
+
+
+transform:translateY(-5px);
+
 
 }
 
 
 
 
-/* PROFILE */
+
+.home-image img{
 
 
-.profile img{
+width:430px;
 
 
-width:360px;
-
-height:360px;
+height:520px;
 
 
 object-fit:cover;
 
 
-border-radius:50%;
-
-
-border:12px solid white;
+border-radius:200px 200px 30px 30px;
 
 
 box-shadow:
 
 
-0 0 50px rgba(0,170,230,.4);
+0 30px 60px rgba(0,140,200,.25);
 
 
 }
@@ -331,15 +306,18 @@ box-shadow:
 
 
 
-/* ==========================
- SECTION
-========================== */
 
 
-.section{
+
+/* =========================
+SECTION
+========================= */
 
 
-padding:100px 8%;
+section{
+
+
+padding:100px 10%;
 
 
 }
@@ -352,38 +330,20 @@ padding:100px 8%;
 text-align:center;
 
 
-font-size:42px;
-
-
-color:#087cb5;
-
-
-margin-bottom:50px;
+margin-bottom:60px;
 
 
 }
 
 
-.title::after{
+
+.title h2{
 
 
-content:"";
-
-display:block;
+font-size:45px;
 
 
-width:80px;
-
-height:5px;
-
-
-background:#49c7f5;
-
-
-margin:15px auto;
-
-
-border-radius:20px;
+color:#007db8;
 
 
 }
@@ -391,149 +351,137 @@ border-radius:20px;
 
 
 
-/* ==========================
- MEDICAL CARD
-========================== */
+
+/* =========================
+ABOUT
+========================= */
 
 
-.card{
+.about-content{
 
 
-background:white;
+display:flex;
 
 
-padding:40px;
+align-items:center;
+
+
+gap:60px;
+
+
+}
+
+
+
+.about-content img{
+
+
+width:300px;
+
+
+height:380px;
+
+
+object-fit:cover;
 
 
 border-radius:30px;
 
 
-box-shadow:
+}
 
 
-0 15px 40px rgba(0,150,220,.15);
+
+.about-content h3{
 
 
-border-left:8px solid #31b8ee;
+font-size:30px;
+
+
+color:#008dcc;
+
+
+}
+
+
+
+.about-content p{
 
 
 font-size:20px;
 
 
+line-height:2;
+
+
+margin-top:20px;
+
+
 }
 
 
 
 
 
-/* ==========================
- EDUCATION
-========================== */
 
 
-.timeline{
+/* =========================
+EDUCATION
+========================= */
+
+
+.education-list{
 
 
 display:flex;
 
-gap:30px;
 
 justify-content:center;
+
+
+gap:50px;
 
 
 }
 
 
 
-.box{
-
-
-background:white;
-
-
-padding:35px;
-
-
-border-radius:25px;
-
-
-width:350px;
+.education-list div{
 
 
 text-align:center;
 
 
-box-shadow:
-
-0 15px 35px rgba(0,150,220,.15);
+width:250px;
 
 
-transition:.4s;
+position:relative;
 
 
 }
 
 
 
-.box:hover{
+.education-list h3{
 
 
-transform:translateY(-12px);
+font-size:70px;
 
 
-}
-
-
-
-.box h3{
-
-
-color:#008dcc;
-
-
-font-size:25px;
+color:#8bdcff;
 
 
 }
 
 
 
-
-/* ==========================
- SKILL NURSE
-========================== */
+.education-list p{
 
 
-.skill{
+font-size:20px;
 
 
-background:white;
-
-
-padding:30px;
-
-
-border-radius:25px;
-
-
-margin-bottom:20px;
-
-
-box-shadow:
-
-0 10px 25px rgba(0,150,220,.15);
-
-
-}
-
-
-
-.skill span{
-
-
-color:#008dcc;
-
-font-weight:600;
+color:#28566c;
 
 
 }
@@ -541,9 +489,13 @@ font-weight:600;
 
 
 
-/* ==========================
- PROJECT
-========================== */
+
+
+
+
+/* =========================
+GALLERY
+========================= */
 
 
 .gallery{
@@ -562,22 +514,19 @@ gap:30px;
 
 
 
-.work{
+.gallery img{
 
 
-background:white;
+width:100%;
+
+
+height:300px;
+
+
+object-fit:cover;
 
 
 border-radius:25px;
-
-
-overflow:hidden;
-
-
-box-shadow:
-
-
-0 15px 35px rgba(0,150,220,.18);
 
 
 transition:.4s;
@@ -587,67 +536,15 @@ transition:.4s;
 
 
 
-.work:hover{
+.gallery img:hover{
 
 
-transform:translateY(-10px);
-
-
-}
-
-
-
-.work img{
-
-
-width:100%;
-
-
-height:250px;
-
-
-object-fit:cover;
-
-
-}
-
-
-
-.work h3{
-
-
-padding:20px;
-
-
-text-align:center;
-
-
-color:#087cb5;
-
-
-}
-
-
-
-
-/* CERTIFICATE */
-
-
-.certificate img{
-
-
-width:330px;
-
-
-border-radius:20px;
-
-
-margin:15px;
+transform:scale(1.05);
 
 
 box-shadow:
 
-0 10px 30px rgba(0,150,220,.2);
+0 20px 40px rgba(0,150,220,.25);
 
 
 }
@@ -655,39 +552,64 @@ box-shadow:
 
 
 
-/* CONTACT */
 
 
-.contact{
+
+
+/* =========================
+CONTACT
+========================= */
+
+
+#contact{
 
 
 text-align:center;
 
 
-background:#dff6ff;
+background:#e5f8ff;
 
 
 }
 
 
+
+#contact p{
+
+
+font-size:20px;
+
+
+margin:10px;
+
+
+}
+
+
+
+
+
+
+/* FOOTER */
 
 
 footer{
 
 
-background:#087cb5;
-
-
-padding:25px;
-
-
-text-align:center;
+background:#007db8;
 
 
 color:white;
 
 
+text-align:center;
+
+
+padding:25px;
+
+
 }
+
 
 
 
@@ -698,10 +620,19 @@ color:white;
 @media(max-width:768px){
 
 
-.hero{
+nav ul{
+
+display:none;
+
+}
+
+
+
+.home{
 
 
 flex-direction:column;
+
 
 text-align:center;
 
@@ -710,19 +641,50 @@ text-align:center;
 
 
 
-.hero-text h1{
+.home-text h1{
 
-font-size:35px;
+
+font-size:45px;
+
 
 }
 
 
 
-.profile img{
+.home-image img{
 
-width:250px;
 
-height:250px;
+width:300px;
+
+
+height:380px;
+
+
+margin-top:40px;
+
+
+}
+
+
+
+.about-content{
+
+
+flex-direction:column;
+
+
+}
+
+
+
+.education-list{
+
+
+flex-direction:column;
+
+
+align-items:center;
+
 
 }
 
@@ -730,31 +692,9 @@ height:250px;
 
 .gallery{
 
+
 grid-template-columns:1fr;
 
-}
-
-
-
-.timeline{
-
-flex-direction:column;
-
-}
-
-
-
-.box{
-
-width:100%;
-
-}
-
-
-
-nav ul{
-
-display:none;
 
 }
 
