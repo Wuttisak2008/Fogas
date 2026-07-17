@@ -1,338 +1,300 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>
-NATTHADA SUKPITAK | Nursing Portfolio
-</title>
-
-
-<link rel="stylesheet" href="style.css">
-
-
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | ณัฐดา สุขพิทักษ์</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Sarabun & Mitr -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&family=Sarabun:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bcn: {
+                            light: '#E0F2FE',  /* ฟ้าอ่อนพาสเทล */
+                            DEFAULT: '#38BDF8',/* ฟ้าสว่าง */
+                            dark: '#0369A1',   /* น้ำเงินเข้มสุภาพ */
+                            deep: '#0F172A'    /* สีกรมท่าเกือบดำ */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Sarabun', 'sans-serif'],
+                        title: ['Mitr', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-
-<script src="script.js"></script>
-<body>
-
-
-
-<!-- HEADER -->
-
-<header>
-
-<nav>
-
-<div class="logo">
-NATTHADA
-</div>
-
-
-<ul>
-
-<li><a href="#home">HOME</a></li>
-
-<li><a href="#about">ABOUT</a></li>
-
-<li><a href="#education">EDUCATION</a></li>
-
-<li><a href="#portfolio">PORTFOLIO</a></li>
-
-<li><a href="#contact">CONTACT</a></li>
-
-</ul>
-
-
-</nav>
-
-</header>
-
-
-
-
-
-<!-- HOME -->
-
-
-<section class="home" id="home">
-
-
-<div class="home-text">
-
-
-<p class="sub">
-NURSING PORTFOLIO
-</p>
-
-
-<h1>
-นางสาวณัฐดา
-<br>
-สุขพิทักษ์
-</h1>
-
-
-<p>
-
-แฟ้มสะสมผลงาน
-เพื่อแสดงความสามารถ
-ความตั้งใจ และประสบการณ์
-
-</p>
-
-
-<a href="#portfolio">
-VIEW MY WORK
-</a>
-
-
-</div>
-
-
-
-
-<div class="home-image">
-
-
-<img src="images/profile.png">
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- ABOUT -->
-
-
-<section id="about">
-
-
-<div class="title">
-
-<h2>
-ABOUT ME
-</h2>
-
-</div>
-
-
-
-<div class="about-content">
-
-
-<img src="images/profile2.png">
-
-
-
-<div>
-
-
-<h3>
-ประวัติส่วนตัว
-</h3>
-
-
-<p>
-
-ดิฉัน นางสาวณัฐดา สุขพิทักษ์
-
-มีความสนใจด้านการพยาบาล
-และวิทยาศาสตร์สุขภาพ
-
-พร้อมเรียนรู้ พัฒนาตนเอง
-และนำความรู้ไปใช้ในการดูแลผู้อื่น
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- EDUCATION -->
-
-
-<section id="education">
-
-
-<div class="title">
-
-<h2>
-EDUCATION
-</h2>
-
-</div>
-
-
-
-<div class="education-list">
-
-
-<div>
-
-<h3>
-01
-</h3>
-
-<p>
-ระดับมัธยมศึกษา
-</p>
-
-</div>
-
-
-
-<div>
-
-<h3>
-02
-</h3>
-
-<p>
-กิจกรรมและประสบการณ์
-</p>
-
-</div>
-
-
-
-<div>
-
-<h3>
-03
-</h3>
-
-<p>
-เป้าหมาย
-วิทยาลัยพยาบาลบรมราชชนนี
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- PORTFOLIO -->
-
-
-<section id="portfolio">
-
-
-<div class="title">
-
-<h2>
-MY PORTFOLIO
-</h2>
-
-</div>
-
-
-
-<div class="gallery">
-
-
-<img src="images/work1.jpg">
-
-<img src="images/work2.jpg">
-
-<img src="images/work3.jpg">
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- CONTACT -->
-
-
-<section id="contact">
-
-
-<div class="title">
-
-<h2>
-CONTACT
-</h2>
-
-</div>
-
-
-<p>
-NATTHADA SUKPITAK
-</p>
-
-
-<p>
-Email : example@email.com
-</p>
-
-
-</section>
-
-
-
-
-
-
-
-
-<footer>
-
-<p>
-© 2026 NATTHADA SUKPITAK
-</p>
-
-</footer>
-
-
-
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- NAV BAR -->
+    <nav class="fixed w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="font-title text-xl font-semibold text-bcn-dark tracking-wide flex items-center gap-2">
+                <i data-lucide="heart-pulse" class="text-bcn"></i> NATTADA.S
+            </a>
+            <div class="hidden md:flex gap-6 font-medium text-slate-600">
+                <a href="#home" class="hover:text-bcn-dark transition">หน้าแรก</a>
+                <a href="#about" class="hover:text-bcn-dark transition">ประวัติส่วนตัว</a>
+                <a href="#education" class="hover:text-bcn-dark transition">การศึกษา</a>
+                <a href="#activities" class="hover:text-bcn-dark transition">กิจกรรมและผลงาน</a>
+                <a href="#contact" class="hover:text-bcn-dark transition">ติดต่อ</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-28 pb-20 bg-gradient-to-b from-bcn-light via-white to-slate-50">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
+            <!-- Left Content -->
+            <div class="flex-1 text-center md:text-left space-y-6">
+                <span class="bg-sky-100 text-bcn-dark text-sm font-semibold px-4 py-1.5 rounded-full inline-block">
+                    PORTFOLIO FOR UNIVERSITY ADMISSION
+                </span>
+                <h1 class="font-title text-4xl md:text-6xl font-bold text-bcn-deep leading-tight">
+                    ณัฐดา สุขพิทักษ์
+                </h1>
+                <p class="text-lg md:text-xl text-slate-600 font-light leading-relaxed">
+                    มุ่งมั่นที่จะเข้าศึกษาต่อ ณ <span class="text-bcn-dark font-semibold">วิทยาลัยพยาบาลบรมราชชนนี</span> เพื่อพัฒนาทักษะทางวิชาชีพ ยึดมั่นในคุณธรรม และพร้อมอุทิศตนเพื่อดูแลสุขภาพของเพื่อนมนุษย์
+                </p>
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
+                    <a href="#about" class="bg-bcn-dark hover:bg-bcn-deep text-white font-medium px-6 py-3 rounded-xl shadow-lg transition flex items-center gap-2">
+                        ทำความรู้จักฉัน <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="#contact" class="bg-white border border-slate-200 hover:border-bcn text-slate-700 font-medium px-6 py-3 rounded-xl shadow-sm transition">
+                        ช่องทางการติดต่อ
+                    </a>
+                </div>
+            </div>
+            <!-- Right Content (Profile Photo Placeholder) -->
+            <div class="flex-1 flex justify-center relative">
+                <!-- Decorative Shapes -->
+                <div class="absolute -top-4 -left-4 w-72 h-72 bg-sky-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+                <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse"></div>
+                
+                <!-- Main Image Card -->
+                <div class="relative bg-white p-4 rounded-3xl shadow-xl max-w-sm w-full border border-slate-100">
+                    <div class="aspect-[3/4] rounded-2xl bg-sky-50 overflow-hidden flex items-center justify-center border-2 border-dashed border-bcn/40">
+                        <!-- แนะนำให้เปลี่ยน src เป็นลิงก์รูปภาพครึ่งตัวของคุณ ณัฐดา -->
+                        <img id="profile-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=688&auto=format&fit=crop" alt="ณัฐดา สุขพิทักษ์" class="w-full h-full object-cover">
+                        <!-- หากไม่มีรูป ให้ใช้ไอคอนแทนด้านล่างนี้ (เอาแท็ก img ออก) -->
+                        <!-- <div class="text-center text-bcn"><i data-lucide="user" class="w-16 h-16 mx-auto mb-2"></i><p>รูปภาพขนาด 3x4 ของคุณ</p></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-title text-3xl font-bold text-bcn-deep">ประวัติส่วนตัว</h2>
+                <div class="w-16 h-1 bg-bcn mx-auto mt-3 rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <h3 class="font-title text-xl font-semibold text-bcn-dark">ข้อมูลทั่วไป</h3>
+                    <ul class="space-y-3 text-slate-600">
+                        <li class="flex items-center gap-3"><i data-lucide="user" class="text-bcn"></i> <strong>ชื่อ-นามสกุล:</strong> นางสาวณัฐดา สุขพิทักษ์</li>
+                        <li class="flex items-center gap-3"><i data-lucide="calendar" class="text-bcn"></i> <strong>วันเกิด:</strong> [ใส่วันเดือนปีเกิดของคุณ]</li>
+                        <li class="flex items-center gap-3"><i data-lucide="heart" class="text-bcn"></i> <strong>กรุ๊ปเลือด:</strong> [ใส่กรุ๊ปเลือด]</li>
+                        <li class="flex items-center gap-3"><i data-lucide="map-pin" class="text-bcn"></i> <strong>ภูมิลำเนา:</strong> [ใส่จังหวัด/ที่อยู่ของคุณ]</li>
+                    </ul>
+                </div>
+                
+                <div class="space-y-4">
+                    <h3 class="font-title text-xl font-semibold text-bcn-dark">คติประจำใจ & ความสามารถ</h3>
+                    <div class="p-4 bg-sky-50 rounded-2xl border border-sky-100">
+                        <p class="italic text-slate-700 text-center font-medium">
+                            "การดูแลผู้อื่นด้วยหัวใจ คือเป้าหมายสูงสุดของวิชาชีพพยาบาล"
+                        </p>
+                    </div>
+                    <div class="space-y-2">
+                        <h4 class="font-semibold text-slate-700">ทักษะที่โดดเด่น:</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-sm">การปฐมพยาบาลเบื้องต้น</span>
+                            <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-sm">การทำงานเป็นทีม</span>
+                            <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-sm">จิตวิญญาณแห่งการบริการ (Service Mind)</span>
+                            <span class="bg-slate-100 text-slate-700 px-3 py-1 rounded-lg text-sm">ภาษาอังกฤษพื้นฐาน</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-title text-3xl font-bold text-bcn-deep">ประวัติการศึกษา</h2>
+                <div class="w-16 h-1 bg-bcn mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-slate-200">
+                <!-- ระดับมัธยมศึกษาตอนปลาย -->
+                <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
+                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-bcn-dark border-4 border-white rounded-full z-10"></div>
+                    <div class="w-full md:w-5/12 pl-12 md:pl-0 md:text-right">
+                        <span class="text-sm font-semibold text-bcn-dark">ปีการศึกษา 256X - ปัจจุบัน</span>
+                        <h4 class="font-title text-lg font-bold text-slate-800 mt-1">มัธยมศึกษาตอนปลาย (แผนการเรียน วิทย์-คณิต)</h4>
+                        <p class="text-slate-600">[ระบุชื่อโรงเรียนของคุณ เช่น โรงเรียนสตรีวิทยา]</p>
+                        <p class="text-sm text-slate-500 mt-1">เกรดเฉลี่ยสะสม (GPAX): [ใส่เกรด เช่น 3.85]</p>
+                    </div>
+                    <div class="w-full md:w-5/12 hidden md:block"></div>
+                </div>
+
+                <!-- ระดับมัธยมศึกษาตอนต้น -->
+                <div class="relative flex flex-col md:flex-row md:justify-between items-start md:items-center">
+                    <div class="absolute left-4 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-slate-300 border-4 border-white rounded-full z-10"></div>
+                    <div class="w-full md:w-5/12 hidden md:block"></div>
+                    <div class="w-full md:w-5/12 pl-12 md:pl-0">
+                        <span class="text-sm font-semibold text-slate-500">ปีการศึกษา 256X - 256X</span>
+                        <h4 class="font-title text-lg font-bold text-slate-800 mt-1">มัธยมศึกษาตอนต้น</h4>
+                        <p class="text-slate-600">[ระบุชื่อโรงเรียน]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVITIES SECTION -->
+    <section id="activities" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-title text-3xl font-bold text-bcn-deep">กิจกรรมและผลงานที่ภาคภูมิใจ</h2>
+                <p class="text-slate-500 mt-2">สะท้อนถึงทักษะ ความรับผิดชอบ และความพร้อมในการก้าวสู่สายงานบริการสุขภาพ</p>
+                <div class="w-16 h-1 bg-bcn mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <!-- Grid of Activities -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Activity 1 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="aspect-video bg-sky-100 flex items-center justify-center text-slate-400">
+                        <!-- แนะนำให้ใส่ภาพกิจกรรมของคุณจริงๆ -->
+                        <i data-lucide="image" class="w-12 h-12 text-bcn/40"></i>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-xs font-semibold text-bcn-dark tracking-wider uppercase">กิจกรรมสาธารณประโยชน์</span>
+                        <h4 class="font-title text-lg font-bold text-slate-800">โครงการจิตอาสาพยาบาลชุมชน</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            เข้าร่วมเป็นอาสาสมัครช่วยคัดกรองสุขภาพเบื้องต้นให้กับผู้สูงอายุ ณ โรงพยาบาลส่งเสริมสุขภาพตำบล
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Activity 2 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="aspect-video bg-sky-100 flex items-center justify-center text-slate-400">
+                        <i data-lucide="image" class="w-12 h-12 text-bcn/40"></i>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-xs font-semibold text-bcn-dark tracking-wider uppercase">การฝึกอบรม</span>
+                        <h4 class="font-title text-lg font-bold text-slate-800">ผ่านการอบรมหลักสูตร CPR เบื้องต้น</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            เรียนรู้และฝึกฝนการกู้ชีพขั้นพื้นฐาน (Basic CPR) และการใช้เครื่อง AED อย่างถูกต้องตามมาตรฐานสากล
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Activity 3 -->
+                <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="aspect-video bg-sky-100 flex items-center justify-center text-slate-400">
+                        <i data-lucide="image" class="w-12 h-12 text-bcn/40"></i>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-xs font-semibold text-bcn-dark tracking-wider uppercase">ความเป็นผู้นำ</span>
+                        <h4 class="font-title text-lg font-bold text-slate-800">ประธานสภานักเรียนฝ่ายจิตอาสา</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            จัดทำโครงการรณรงค์เรื่องการล้างมือและการดูแลสุขอนามัยในโรงเรียนให้กับน้องๆ ประถมศึกษา
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-slate-950 text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-title text-3xl font-bold">ช่องทางการติดต่อ</h2>
+                <p class="text-slate-400 mt-2">หากต้องการสอบถามข้อมูลเพิ่มเติม ยินดีต้อนรับการติดต่อค่ะ</p>
+                <div class="w-16 h-1 bg-bcn mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Info cards -->
+                <div class="space-y-6">
+                    <p class="text-slate-400 font-light">
+                        "ขอขอบพระคุณคณะกรรมการทุกท่านที่ให้ความกรุณาในการเข้าเยี่ยมชมผลงาน หวังเป็นอย่างยิ่งว่าจะได้มีโอกาสเข้าเรียนรู้ในสถาบันบรมราชชนนีค่ะ"
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-bcn">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">เบอร์โทรศัพท์</p>
+                                <p class="font-medium">[ระบุเบอร์โทรศัพท์ของคุณ]</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-bcn">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-400">อีเมล</p>
+                                <p class="font-medium">nattada.suk@email.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social links / Map placeholder -->
+                <div class="bg-white/5 p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+                    <h4 class="font-title text-lg font-medium mb-4">สื่อสังคมออนไลน์</h4>
+                    <div class="space-y-3 text-slate-300">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="facebook" class="text-blue-400"></i>
+                            <span>Nattada Sukphitak</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="instagram" class="text-pink-400"></i>
+                            <span>@nattada.sky</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="message-circle" class="text-green-400"></i>
+                            <span>ID Line: [ระบุไอดีไลน์]</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-6">© 2026 Nattada Sukphitak. Designed for BCN Admission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script to run Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
-
 </html>
