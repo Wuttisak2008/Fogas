@@ -1,7 +1,8 @@
-/* ==============================
-   NURSING MODERN PORTFOLIO STYLE
-   NATTHADA SUKPITAK
-============================== */
+/* =====================================
+   NURSING PORTFOLIO
+   BLUE MEDICAL UNIVERSITY STYLE
+===================================== */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 
@@ -16,38 +17,55 @@
 
 body{
 
-    background:#f7fcff;
-    color:#234b63;
+    background:#f4fbff;
+
+    color:#194c6b;
 
 }
 
 
 
-/* NAVBAR */
+/* ==========================
+ NAVBAR
+========================== */
+
 
 header{
 
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:999;
+position:fixed;
+
+top:0;
+
+width:100%;
+
+z-index:999;
 
 }
+
 
 
 nav{
 
-    height:80px;
+height:80px;
 
-    padding:0 8%;
+display:flex;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+justify-content:space-between;
 
-    background:rgba(255,255,255,.8);
+align-items:center;
 
-    backdrop-filter:blur(20px);
+padding:0 8%;
+
+
+background:rgba(255,255,255,.85);
+
+backdrop-filter:blur(15px);
+
+
+box-shadow:
+
+0 5px 25px rgba(0,140,200,.15);
+
 
 }
 
@@ -55,11 +73,37 @@ nav{
 
 .logo{
 
-    font-size:28px;
+font-size:30px;
 
-    font-weight:700;
+font-weight:700;
 
-    color:#159bd7;
+color:#159bd3;
+
+}
+
+
+.logo::before{
+
+content:"🩺 ";
+
+}
+
+
+
+
+nav ul{
+
+display:flex;
+
+gap:35px;
+
+}
+
+
+
+nav li{
+
+list-style:none;
 
 }
 
@@ -67,54 +111,100 @@ nav{
 
 nav a{
 
-    color:#356278;
+text-decoration:none;
 
-    text-decoration:none;
+color:#24556e;
 
-    transition:.3s;
+font-weight:500;
+
+transition:.3s;
 
 }
 
 
 nav a:hover{
 
-    color:#00aeea;
+color:#00a6e8;
 
 }
 
 
 
 
-/* HERO */
+/* ==========================
+ HERO
+========================== */
 
 
 .hero{
 
-    min-height:100vh;
 
-    padding:120px 8%;
+min-height:100vh;
 
-    display:flex;
+display:flex;
 
-    justify-content:space-between;
+align-items:center;
 
-    align-items:center;
+justify-content:space-between;
 
 
-    background:
+padding:120px 8%;
 
-    linear-gradient(
 
-    135deg,
+background:
 
-    #dff6ff,
+linear-gradient(
 
-    white,
+135deg,
 
-    #b7e8ff
+#dff6ff,
 
-    );
+#ffffff,
 
+#c5edff
+
+);
+
+
+position:relative;
+
+overflow:hidden;
+
+
+}
+
+
+
+.hero::after{
+
+
+content:"";
+
+position:absolute;
+
+width:600px;
+
+height:600px;
+
+background:#8bdcff;
+
+border-radius:50%;
+
+right:-200px;
+
+bottom:-200px;
+
+opacity:.35;
+
+
+}
+
+
+
+
+.hero-text{
+
+z-index:2;
 
 }
 
@@ -122,9 +212,11 @@ nav a:hover{
 
 .hero-text h1{
 
-    font-size:55px;
 
-    color:#087db8;
+font-size:55px;
+
+color:#087cb5;
+
 
 }
 
@@ -132,9 +224,13 @@ nav a:hover{
 
 .hero-text h2{
 
-    font-size:35px;
 
-    color:#35b8eb;
+font-size:45px;
+
+color:#48b9e8;
+
+letter-spacing:4px;
+
 
 }
 
@@ -142,31 +238,61 @@ nav a:hover{
 
 .hero-text p{
 
-    margin:20px 0;
 
-    font-size:20px;
+font-size:20px;
+
+margin:25px 0;
+
+color:#567b8d;
+
 
 }
+
+
 
 
 
 .btn{
 
 
-    background:#16a5dc;
+background:
 
-    color:white;
+linear-gradient(
 
-    padding:15px 40px;
+45deg,
 
-    border-radius:50px;
+#009fe3,
 
-    text-decoration:none;
+#54d3ff
+
+);
 
 
-    box-shadow:
+padding:15px 40px;
 
-    0 10px 25px rgba(0,160,220,.3);
+border-radius:50px;
+
+
+color:white;
+
+text-decoration:none;
+
+
+box-shadow:
+
+0 10px 30px rgba(0,150,220,.35);
+
+
+transition:.4s;
+
+
+}
+
+
+
+.btn:hover{
+
+transform:scale(1.08);
 
 }
 
@@ -178,20 +304,26 @@ nav a:hover{
 
 .profile img{
 
-    width:360px;
 
-    height:360px;
+width:360px;
 
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:15px solid white;
+height:360px;
 
 
-    box-shadow:
+object-fit:cover;
 
-    0 0 50px rgba(0,170,230,.35);
+
+border-radius:50%;
+
+
+border:12px solid white;
+
+
+box-shadow:
+
+
+0 0 50px rgba(0,170,230,.4);
+
 
 }
 
@@ -199,12 +331,16 @@ nav a:hover{
 
 
 
-/* SECTION */
+/* ==========================
+ SECTION
+========================== */
 
 
 .section{
 
-    padding:100px 8%;
+
+padding:100px 8%;
+
 
 }
 
@@ -212,67 +348,98 @@ nav a:hover{
 
 .title{
 
-    text-align:center;
 
-    font-size:40px;
+text-align:center;
 
-    color:#087db8;
 
-    margin-bottom:40px;
+font-size:42px;
+
+
+color:#087cb5;
+
+
+margin-bottom:50px;
+
+
+}
+
+
+.title::after{
+
+
+content:"";
+
+display:block;
+
+
+width:80px;
+
+height:5px;
+
+
+background:#49c7f5;
+
+
+margin:15px auto;
+
+
+border-radius:20px;
+
 
 }
 
 
 
 
-/* CARD */
+/* ==========================
+ MEDICAL CARD
+========================== */
 
 
-.card,
-.box,
-.work{
+.card{
 
 
-    background:white;
-
-    border-radius:30px;
+background:white;
 
 
-    box-shadow:
-
-    0 15px 35px rgba(0,150,220,.12);
+padding:40px;
 
 
-    transition:.4s;
+border-radius:30px;
+
+
+box-shadow:
+
+
+0 15px 40px rgba(0,150,220,.15);
+
+
+border-left:8px solid #31b8ee;
+
+
+font-size:20px;
 
 
 }
 
 
 
-.card:hover,
-.box:hover,
-.work:hover{
-
-    transform:translateY(-10px);
-
-}
 
 
-
-
-
-/* EDUCATION */
+/* ==========================
+ EDUCATION
+========================== */
 
 
 .timeline{
 
 
-    display:flex;
+display:flex;
 
-    gap:30px;
+gap:30px;
 
-    justify-content:center;
+justify-content:center;
+
 
 }
 
@@ -280,11 +447,51 @@ nav a:hover{
 
 .box{
 
-    padding:35px;
 
-    width:350px;
+background:white;
 
-    text-align:center;
+
+padding:35px;
+
+
+border-radius:25px;
+
+
+width:350px;
+
+
+text-align:center;
+
+
+box-shadow:
+
+0 15px 35px rgba(0,150,220,.15);
+
+
+transition:.4s;
+
+
+}
+
+
+
+.box:hover{
+
+
+transform:translateY(-12px);
+
+
+}
+
+
+
+.box h3{
+
+
+color:#008dcc;
+
+
+font-size:25px;
 
 
 }
@@ -292,17 +499,64 @@ nav a:hover{
 
 
 
-/* PORTFOLIO */
+/* ==========================
+ SKILL NURSE
+========================== */
+
+
+.skill{
+
+
+background:white;
+
+
+padding:30px;
+
+
+border-radius:25px;
+
+
+margin-bottom:20px;
+
+
+box-shadow:
+
+0 10px 25px rgba(0,150,220,.15);
+
+
+}
+
+
+
+.skill span{
+
+
+color:#008dcc;
+
+font-weight:600;
+
+
+}
+
+
+
+
+/* ==========================
+ PROJECT
+========================== */
 
 
 .gallery{
 
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:repeat(3,1fr);
 
-    gap:30px;
+grid-template-columns:repeat(3,1fr);
+
+
+gap:30px;
+
 
 }
 
@@ -310,7 +564,34 @@ nav a:hover{
 
 .work{
 
-    overflow:hidden;
+
+background:white;
+
+
+border-radius:25px;
+
+
+overflow:hidden;
+
+
+box-shadow:
+
+
+0 15px 35px rgba(0,150,220,.18);
+
+
+transition:.4s;
+
+
+}
+
+
+
+.work:hover{
+
+
+transform:translateY(-10px);
+
 
 }
 
@@ -318,11 +599,15 @@ nav a:hover{
 
 .work img{
 
-    width:100%;
 
-    height:260px;
+width:100%;
 
-    object-fit:cover;
+
+height:250px;
+
+
+object-fit:cover;
+
 
 }
 
@@ -330,11 +615,15 @@ nav a:hover{
 
 .work h3{
 
-    padding:20px;
 
-    color:#087db8;
+padding:20px;
 
-    text-align:center;
+
+text-align:center;
+
+
+color:#087cb5;
+
 
 }
 
@@ -346,15 +635,20 @@ nav a:hover{
 
 .certificate img{
 
-    width:330px;
 
-    margin:15px;
+width:330px;
 
-    border-radius:25px;
 
-    box-shadow:
+border-radius:20px;
 
-    0 10px 30px rgba(0,150,220,.2);
+
+margin:15px;
+
+
+box-shadow:
+
+0 10px 30px rgba(0,150,220,.2);
+
 
 }
 
@@ -367,9 +661,10 @@ nav a:hover{
 .contact{
 
 
-    background:#dff6ff;
+text-align:center;
 
-    text-align:center;
+
+background:#dff6ff;
 
 
 }
@@ -380,17 +675,19 @@ nav a:hover{
 footer{
 
 
-    background:#087db8;
+background:#087cb5;
 
-    color:white;
 
-    padding:25px;
+padding:25px;
 
-    text-align:center;
+
+text-align:center;
+
+
+color:white;
 
 
 }
-
 
 
 
@@ -403,16 +700,19 @@ footer{
 
 .hero{
 
-    flex-direction:column;
 
-    text-align:center;
+flex-direction:column;
+
+text-align:center;
+
 
 }
 
 
+
 .hero-text h1{
 
-    font-size:35px;
+font-size:35px;
 
 }
 
@@ -420,16 +720,17 @@ footer{
 
 .profile img{
 
-    width:250px;
+width:250px;
 
-    height:250px;
+height:250px;
 
 }
 
 
+
 .gallery{
 
-    grid-template-columns:1fr;
+grid-template-columns:1fr;
 
 }
 
@@ -437,16 +738,26 @@ footer{
 
 .timeline{
 
-    flex-direction:column;
+flex-direction:column;
 
 }
+
 
 
 .box{
 
-    width:100%;
+width:100%;
 
 }
+
+
+
+nav ul{
+
+display:none;
+
+}
+
 
 
 }
