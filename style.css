@@ -1,105 +1,28 @@
 /* ==============================
-   NURSING MODERN PORTFOLIO STYLE
-   NATTHADA SUKPITAK
+   BEAUTIFUL NURSING FRAME STYLE
 ============================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 
+/* PROFILE FRAME */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Kanit',sans-serif;
-}
+.profile{
 
-
-body{
-
-    background:#f7fcff;
-    color:#234b63;
+    position:relative;
 
 }
 
 
+.profile::before{
 
-/* NAVBAR */
+    content:"";
 
-header{
+    position:absolute;
 
-    position:fixed;
-    width:100%;
-    top:0;
-    z-index:999;
+    width:380px;
 
-}
+    height:380px;
 
-
-nav{
-
-    height:80px;
-
-    padding:0 8%;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    background:rgba(255,255,255,.8);
-
-    backdrop-filter:blur(20px);
-
-}
-
-
-
-.logo{
-
-    font-size:28px;
-
-    font-weight:700;
-
-    color:#159bd7;
-
-}
-
-
-
-nav a{
-
-    color:#356278;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-}
-
-
-nav a:hover{
-
-    color:#00aeea;
-
-}
-
-
-
-
-/* HERO */
-
-
-.hero{
-
-    min-height:100vh;
-
-    padding:120px 8%;
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
+    border-radius:50%;
 
     background:
 
@@ -107,73 +30,23 @@ nav a:hover{
 
     135deg,
 
-    #dff6ff,
+    #7bdcff,
 
-    white,
-
-    #b7e8ff
+    #ffffff
 
     );
 
 
-}
+    z-index:-1;
 
+    top:-10px;
 
+    left:-10px;
 
-.hero-text h1{
-
-    font-size:55px;
-
-    color:#087db8;
+    filter:blur(15px);
 
 }
 
-
-
-.hero-text h2{
-
-    font-size:35px;
-
-    color:#35b8eb;
-
-}
-
-
-
-.hero-text p{
-
-    margin:20px 0;
-
-    font-size:20px;
-
-}
-
-
-
-.btn{
-
-
-    background:#16a5dc;
-
-    color:white;
-
-    padding:15px 40px;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-
-    box-shadow:
-
-    0 10px 25px rgba(0,160,220,.3);
-
-}
-
-
-
-
-/* PROFILE */
 
 
 .profile img{
@@ -184,14 +57,17 @@ nav a:hover{
 
     object-fit:cover;
 
+
     border-radius:50%;
 
-    border:15px solid white;
+
+    border:12px solid rgba(255,255,255,.9);
 
 
     box-shadow:
 
-    0 0 50px rgba(0,170,230,.35);
+    0 25px 60px rgba(0,150,220,.35);
+
 
 }
 
@@ -199,48 +75,249 @@ nav a:hover{
 
 
 
-/* SECTION */
+/* CONTENT CARD */
 
 
-.section{
+.card{
 
-    padding:100px 8%;
+
+    background:
+
+    linear-gradient(
+
+    145deg,
+
+    rgba(255,255,255,.95),
+
+    rgba(230,248,255,.8)
+
+    );
+
+
+    border-radius:40px;
+
+
+    padding:45px;
+
+
+    border:
+
+    1px solid rgba(100,200,240,.3);
+
+
+    box-shadow:
+
+
+    0 20px 50px rgba(0,150,220,.15);
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
 
 }
 
 
 
-.title{
+.card::before{
 
-    text-align:center;
 
-    font-size:40px;
+    content:"🩺";
 
-    color:#087db8;
 
-    margin-bottom:40px;
+    position:absolute;
+
+
+    right:30px;
+
+    top:20px;
+
+
+    font-size:55px;
+
+    opacity:.15;
+
 
 }
 
 
 
 
-/* CARD */
+
+/* EDUCATION CARD */
 
 
-.card,
-.box,
-.work{
+.box{
 
 
     background:white;
 
-    border-radius:30px;
+
+    border-radius:35px;
+
+
+    padding:40px 30px;
+
+
+    position:relative;
+
+
+    overflow:hidden;
+
+
+    border-top:6px solid #43c5f5;
+
+
+
+}
+
+
+
+.box::after{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:120px;
+
+
+    height:120px;
+
+
+    right:-40px;
+
+
+    bottom:-40px;
+
+
+    background:#dff6ff;
+
+
+    border-radius:50%;
+
+
+}
+
+
+
+
+.box:hover{
+
+
+    transform:
+
+    translateY(-15px);
 
 
     box-shadow:
 
-    0 15px 35px rgba(0,150,220,.12);
+
+    0 25px 50px rgba(0,150,220,.25);
+
+
+}
+
+
+
+
+
+/* PROJECT CARD */
+
+
+.work{
+
+
+    border-radius:35px;
+
+
+    background:white;
+
+
+    overflow:hidden;
+
+
+    position:relative;
+
+
+}
+
+
+
+.work img{
+
+
+    height:280px;
+
+
+    transition:.5s;
+
+
+}
+
+
+
+.work:hover img{
+
+
+    transform:scale(1.1);
+
+
+}
+
+
+
+.work h3{
+
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    #e5f8ff,
+
+    white
+
+    );
+
+
+    margin:0;
+
+
+    padding:25px;
+
+
+}
+
+
+
+
+
+/* CERTIFICATE FRAME */
+
+
+.certificate img{
+
+
+    border-radius:30px;
+
+
+    padding:10px;
+
+
+    background:white;
+
+
+    border:
+
+    3px solid #bdeaff;
 
 
     transition:.4s;
@@ -250,143 +327,77 @@ nav a:hover{
 
 
 
-.card:hover,
-.box:hover,
-.work:hover{
-
-    transform:translateY(-10px);
-
-}
+.certificate img:hover{
 
 
+    transform:
 
+    scale(1.08)
 
+    rotate(2deg);
 
-/* EDUCATION */
-
-
-.timeline{
-
-
-    display:flex;
-
-    gap:30px;
-
-    justify-content:center;
-
-}
-
-
-
-.box{
-
-    padding:35px;
-
-    width:350px;
-
-    text-align:center;
-
-
-}
-
-
-
-
-/* PORTFOLIO */
-
-
-.gallery{
-
-
-    display:grid;
-
-    grid-template-columns:repeat(3,1fr);
-
-    gap:30px;
-
-}
-
-
-
-.work{
-
-    overflow:hidden;
-
-}
-
-
-
-.work img{
-
-    width:100%;
-
-    height:260px;
-
-    object-fit:cover;
-
-}
-
-
-
-.work h3{
-
-    padding:20px;
-
-    color:#087db8;
-
-    text-align:center;
-
-}
-
-
-
-
-/* CERTIFICATE */
-
-
-.certificate img{
-
-    width:330px;
-
-    margin:15px;
-
-    border-radius:25px;
 
     box-shadow:
 
-    0 10px 30px rgba(0,150,220,.2);
+
+    0 20px 40px rgba(0,150,220,.3);
+
 
 }
 
 
 
 
-/* CONTACT */
+
+/* SECTION TITLE */
+
+
+.title{
+
+
+    position:relative;
+
+
+}
+
+
+.title::after{
+
+
+    width:120px;
+
+
+    height:6px;
+
+
+    background:
+
+
+    linear-gradient(
+
+    90deg,
+
+    #00aeea,
+
+    #8de0ff
+
+    );
+
+
+}
+
+
+
+
+/* CONTACT BOX */
 
 
 .contact{
 
 
-    background:#dff6ff;
+    border-radius:
 
-    text-align:center;
-
-
-}
-
-
-
-
-footer{
-
-
-    background:#087db8;
-
-    color:white;
-
-    padding:25px;
-
-    text-align:center;
+    60px 60px 0 0;
 
 
 }
@@ -395,58 +406,44 @@ footer{
 
 
 
-/* MOBILE */
+/* BUTTON */
 
 
-@media(max-width:768px){
+.btn{
 
 
-.hero{
-
-    flex-direction:column;
-
-    text-align:center;
-
-}
+    background:
 
 
-.hero-text h1{
+    linear-gradient(
 
-    font-size:35px;
+    45deg,
 
-}
+    #008fd0,
 
+    #5bd7ff
 
-
-.profile img{
-
-    width:250px;
-
-    height:250px;
-
-}
+    );
 
 
-.gallery{
+    border-radius:50px;
 
-    grid-template-columns:1fr;
+
+    transition:.4s;
+
 
 }
 
 
 
-.timeline{
-
-    flex-direction:column;
-
-}
+.btn:hover{
 
 
-.box{
+    transform:
 
-    width:100%;
+    translateY(-5px)
 
-}
+    scale(1.05);
 
 
 }
