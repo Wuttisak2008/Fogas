@@ -1,494 +1,763 @@
-<!DOCTYPE html>
-<html lang="th">
+/* =====================================
+   NURSING PORTFOLIO
+   BLUE MEDICAL UNIVERSITY STYLE
+===================================== */
 
-<head>
 
-<meta charset="UTF-8">
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-NATTHADA | Nursing Portfolio
-</title>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Kanit',sans-serif;
+}
 
-<link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
+body{
 
-</head>
+    background:#f4fbff;
 
+    color:#194c6b;
 
-<body>
+}
 
 
-<header>
 
-<nav>
+/* ==========================
+ NAVBAR
+========================== */
 
-<div class="logo">
-🩵 NATTHADA
-</div>
 
+header{
 
-<ul>
+position:fixed;
 
-<li><a href="#home">HOME</a></li>
+top:0;
 
-<li><a href="#about">PROFILE</a></li>
+width:100%;
 
-<li><a href="#project">WORK</a></li>
+z-index:999;
 
-<li><a href="#contact">CONTACT</a></li>
+}
 
-</ul>
 
 
-</nav>
+nav{
 
-</header>
+height:80px;
 
+display:flex;
 
+justify-content:space-between;
 
+align-items:center;
 
+padding:0 8%;
 
-<!-- HERO NEW STYLE -->
 
-<section class="hero" id="home">
+background:rgba(255,255,255,.85);
 
+backdrop-filter:blur(15px);
 
-<div class="hero-left">
 
+box-shadow:
 
-<div class="badge">
+0 5px 25px rgba(0,140,200,.15);
 
-🩺 Nursing Portfolio 2026
 
-</div>
+}
 
 
 
-<h1>
+.logo{
 
-นางสาวณัฐดา
+font-size:30px;
 
-<span>
-สุขพิทักษ์
-</span>
+font-weight:700;
 
-</h1>
+color:#159bd3;
 
+}
 
-<h2>
 
-Future Nurse
+.logo::before{
 
-</h2>
+content:"🩺 ";
 
+}
 
 
-<p>
 
-"เรียนรู้ด้วยหัวใจ
-ดูแลด้วยความเข้าใจ"
 
-</p>
+nav ul{
 
+display:flex;
 
+gap:35px;
 
-<div class="hero-button">
+}
 
 
-<a href="#project" class="btn">
-VIEW PROJECT
-</a>
 
+nav li{
 
-<a href="#contact" class="outline">
-CONTACT
-</a>
+list-style:none;
 
+}
 
-</div>
 
 
+nav a{
 
-</div>
+text-decoration:none;
 
+color:#24556e;
 
+font-weight:500;
 
+transition:.3s;
 
+}
 
 
-<div class="hero-right">
+nav a:hover{
 
+color:#00a6e8;
 
-<div class="circle-bg"></div>
+}
 
 
-<img src="images/profile.png">
 
 
+/* ==========================
+ HERO
+========================== */
 
-<div class="floating-card card1">
 
-❤️ Care
+.hero{
 
-</div>
 
+min-height:100vh;
 
-<div class="floating-card card2">
+display:flex;
 
-🧬 Health
+align-items:center;
 
-</div>
+justify-content:space-between;
 
 
-<div class="floating-card card3">
+padding:120px 8%;
 
-🎓 Student
 
-</div>
+background:
 
+linear-gradient(
 
+135deg,
 
-</div>
+#dff6ff,
 
+#ffffff,
 
+#c5edff
 
-</section>
+);
 
 
+position:relative;
 
+overflow:hidden;
 
 
+}
 
 
 
+.hero::after{
 
-<!-- PROFILE -->
 
+content:"";
 
-<section class="section" id="about">
+position:absolute;
 
+width:600px;
 
-<div class="heading">
+height:600px;
 
-<h2>
-ABOUT ME
-</h2>
+background:#8bdcff;
 
-<p>
-MY PROFILE
-</p>
+border-radius:50%;
 
-</div>
+right:-200px;
 
+bottom:-200px;
 
+opacity:.35;
 
 
-<div class="profile-layout">
+}
 
 
-<div class="info-card">
 
 
-<h3>
-PERSONAL INFORMATION
-</h3>
+.hero-text{
 
+z-index:2;
 
-<p>
-ชื่อ : นางสาวณัฐดา สุขพิทักษ์
-</p>
+}
 
 
-<p>
-ความสนใจ : การพยาบาล วิทยาศาสตร์สุขภาพ
-</p>
 
+.hero-text h1{
 
-<p>
-เป้าหมาย : เป็นบุคลากรทางสุขภาพที่มีคุณภาพ
-</p>
 
+font-size:55px;
 
-</div>
+color:#087cb5;
 
 
+}
 
 
 
-<div class="quote-box">
+.hero-text h2{
 
 
-🩵
+font-size:45px;
 
-"การพยาบาล
-ไม่ใช่เพียงการรักษา
-แต่คือการดูแลด้วยหัวใจ"
+color:#48b9e8;
 
+letter-spacing:4px;
 
-</div>
 
+}
 
 
-</div>
 
+.hero-text p{
 
 
-</section>
+font-size:20px;
 
+margin:25px 0;
 
+color:#567b8d;
 
 
+}
 
 
 
 
 
-<!-- EDUCATION -->
+.btn{
 
 
-<section class="section">
+background:
 
+linear-gradient(
 
-<div class="heading">
+45deg,
 
-<h2>
-EDUCATION
-</h2>
+#009fe3,
 
-</div>
+#54d3ff
 
+);
 
 
+padding:15px 40px;
 
-<div class="modern-timeline">
+border-radius:50px;
 
 
-<div>
+color:white;
 
-<span>
-01
-</span>
+text-decoration:none;
 
-<h3>
-มัธยมศึกษา
-</h3>
 
-<p>
-โรงเรียน........................
-</p>
+box-shadow:
 
-</div>
+0 10px 30px rgba(0,150,220,.35);
 
 
+transition:.4s;
 
-<div>
 
-<span>
-02
-</span>
+}
 
-<h3>
-Future Goal
-</h3>
 
-<p>
-วิทยาลัยพยาบาลบรมราชชนนี
-</p>
 
-</div>
+.btn:hover{
 
+transform:scale(1.08);
 
+}
 
-</div>
 
 
-</section>
 
+/* PROFILE */
 
 
+.profile img{
 
 
+width:360px;
 
+height:360px;
 
 
+object-fit:cover;
 
-<!-- SKILL -->
 
+border-radius:50%;
 
-<section class="section">
 
+border:12px solid white;
 
-<div class="heading">
 
-<h2>
-NURSING SKILL
-</h2>
+box-shadow:
 
-</div>
 
+0 0 50px rgba(0,170,230,.4);
 
 
-<div class="skill-grid">
+}
 
 
-<div>
-🩺
-<h3>
-Patient Care
-</h3>
-</div>
 
 
 
-<div>
-💙
-<h3>
-Team Work
-</h3>
-</div>
+/* ==========================
+ SECTION
+========================== */
 
 
+.section{
 
-<div>
-🧠
-<h3>
-Problem Solving
-</h3>
-</div>
 
+padding:100px 8%;
 
 
-<div>
-📚
-<h3>
-Learning
-</h3>
-</div>
+}
 
 
 
-</div>
+.title{
 
 
-</section>
+text-align:center;
 
 
+font-size:42px;
 
 
+color:#087cb5;
 
 
+margin-bottom:50px;
 
 
+}
 
-<!-- PROJECT -->
 
+.title::after{
 
-<section class="section" id="project">
 
+content:"";
 
-<div class="heading">
+display:block;
 
-<h2>
-MY WORK
-</h2>
 
+width:80px;
 
-</div>
+height:5px;
 
 
+background:#49c7f5;
 
-<div class="project-grid">
 
+margin:15px auto;
 
-<div class="project big">
 
-<img src="images/work1.jpg">
+border-radius:20px;
 
-<h3>
-Activity Project
-</h3>
 
-</div>
+}
 
 
 
-<div class="project">
 
-<img src="images/work2.jpg">
+/* ==========================
+ MEDICAL CARD
+========================== */
 
-<h3>
-Certificate
-</h3>
 
-</div>
+.card{
 
 
+background:white;
 
-<div class="project">
 
-<img src="images/work3.jpg">
+padding:40px;
 
-<h3>
-Experience
-</h3>
 
-</div>
+border-radius:30px;
 
 
-</div>
+box-shadow:
 
 
-</section>
+0 15px 40px rgba(0,150,220,.15);
 
 
+border-left:8px solid #31b8ee;
 
 
+font-size:20px;
 
 
+}
 
 
-<!-- CONTACT -->
 
 
-<section class="contact" id="contact">
 
+/* ==========================
+ EDUCATION
+========================== */
 
-<h2>
-LET'S CONNECT
-</h2>
 
+.timeline{
 
-<p>
-NATTHADA SUKPITAK
-</p>
 
+display:flex;
 
-<p>
-Email : example@email.com
-</p>
+gap:30px;
 
+justify-content:center;
 
-</section>
 
+}
 
 
 
+.box{
 
 
-<footer>
+background:white;
 
-© 2026 NATTHADA SUKPITAK
 
-</footer>
+padding:35px;
 
 
+border-radius:25px;
 
-<script src="script.js"></script>
 
+width:350px;
 
-</body>
 
-</html>
+text-align:center;
+
+
+box-shadow:
+
+0 15px 35px rgba(0,150,220,.15);
+
+
+transition:.4s;
+
+
+}
+
+
+
+.box:hover{
+
+
+transform:translateY(-12px);
+
+
+}
+
+
+
+.box h3{
+
+
+color:#008dcc;
+
+
+font-size:25px;
+
+
+}
+
+
+
+
+/* ==========================
+ SKILL NURSE
+========================== */
+
+
+.skill{
+
+
+background:white;
+
+
+padding:30px;
+
+
+border-radius:25px;
+
+
+margin-bottom:20px;
+
+
+box-shadow:
+
+0 10px 25px rgba(0,150,220,.15);
+
+
+}
+
+
+
+.skill span{
+
+
+color:#008dcc;
+
+font-weight:600;
+
+
+}
+
+
+
+
+/* ==========================
+ PROJECT
+========================== */
+
+
+.gallery{
+
+
+display:grid;
+
+
+grid-template-columns:repeat(3,1fr);
+
+
+gap:30px;
+
+
+}
+
+
+
+.work{
+
+
+background:white;
+
+
+border-radius:25px;
+
+
+overflow:hidden;
+
+
+box-shadow:
+
+
+0 15px 35px rgba(0,150,220,.18);
+
+
+transition:.4s;
+
+
+}
+
+
+
+.work:hover{
+
+
+transform:translateY(-10px);
+
+
+}
+
+
+
+.work img{
+
+
+width:100%;
+
+
+height:250px;
+
+
+object-fit:cover;
+
+
+}
+
+
+
+.work h3{
+
+
+padding:20px;
+
+
+text-align:center;
+
+
+color:#087cb5;
+
+
+}
+
+
+
+
+/* CERTIFICATE */
+
+
+.certificate img{
+
+
+width:330px;
+
+
+border-radius:20px;
+
+
+margin:15px;
+
+
+box-shadow:
+
+0 10px 30px rgba(0,150,220,.2);
+
+
+}
+
+
+
+
+/* CONTACT */
+
+
+.contact{
+
+
+text-align:center;
+
+
+background:#dff6ff;
+
+
+}
+
+
+
+
+footer{
+
+
+background:#087cb5;
+
+
+padding:25px;
+
+
+text-align:center;
+
+
+color:white;
+
+
+}
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.hero{
+
+
+flex-direction:column;
+
+text-align:center;
+
+
+}
+
+
+
+.hero-text h1{
+
+font-size:35px;
+
+}
+
+
+
+.profile img{
+
+width:250px;
+
+height:250px;
+
+}
+
+
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.timeline{
+
+flex-direction:column;
+
+}
+
+
+
+.box{
+
+width:100%;
+
+}
+
+
+
+nav ul{
+
+display:none;
+
+}
+
+
+
+}
