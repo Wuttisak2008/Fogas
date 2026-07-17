@@ -1,61 +1,32 @@
 /* =================================
-   NATTHADA NURSING PORTFOLIO
-   Animation Script
+   NATTHADA PORTFOLIO ANIMATION
 ================================= */
 
 
+// Scroll Animation
 
-// เลื่อนหน้าแบบ Smooth
+const sections = document.querySelectorAll("section");
 
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
 
-    link.addEventListener("click",function(e){
+function reveal(){
 
-        e.preventDefault();
+    sections.forEach(section=>{
 
-        document.querySelector(this.getAttribute("href"))
-        .scrollIntoView({
 
-            behavior:"smooth"
+        let position = section.getBoundingClientRect().top;
 
-        });
+        let screen = window.innerHeight / 1.2;
+
+
+
+        if(position < screen){
+
+            section.classList.add("show");
+
+        }
+
 
     });
-
-});
-
-
-
-
-// Animation ตอน Scroll
-
-
-const sections = document.querySelectorAll(".section");
-
-
-const reveal = ()=>{
-
-
-sections.forEach(section=>{
-
-
-    const position = section.getBoundingClientRect().top;
-
-
-    const screen = window.innerHeight / 1.2;
-
-
-
-    if(position < screen){
-
-        section.style.opacity="1";
-
-        section.style.transform="translateY(0)";
-
-    }
-
-
-});
 
 
 }
@@ -65,28 +36,6 @@ sections.forEach(section=>{
 window.addEventListener("scroll",reveal);
 
 
-
-
-
-// ตั้งค่าเริ่มต้น Animation
-
-
-sections.forEach(section=>{
-
-
-section.style.opacity="0";
-
-
-section.style.transform="translateY(50px)";
-
-
-section.style.transition="0.8s ease";
-
-
-});
-
-
-
 reveal();
 
 
@@ -94,35 +43,38 @@ reveal();
 
 
 
-// เอฟเฟกต์ Navbar เปลี่ยนตอนเลื่อน
+// Navbar Effect
+
+
+const header = document.querySelector("header");
 
 
 window.addEventListener("scroll",()=>{
 
 
-const nav = document.querySelector("nav");
+    if(window.scrollY > 80){
 
 
-if(window.scrollY > 50){
+        header.style.background =
+        "rgba(255,255,255,0.95)";
 
 
-nav.style.background="rgba(255,255,255,0.95)";
+        header.style.boxShadow =
+        "0 10px 30px rgba(0,150,220,.15)";
 
 
-nav.style.boxShadow=
-"0 10px 30px rgba(0,150,220,.2)";
+    }
 
 
-}
-
-else{
+    else{
 
 
-nav.style.background=
-"rgba(255,255,255,.75)";
+        header.style.boxShadow =
+        "none";
 
 
-}
+    }
+
 
 
 });
@@ -132,84 +84,34 @@ nav.style.background=
 
 
 
-// พิมพ์ข้อความหน้าแรก
 
 
-const text = 
-"Future Nurse | Caring With Knowledge";
+// Image Hover Effect
 
 
-let index = 0;
-
-
-
-function typing(){
-
-
-const element =
-document.querySelector(".hero-text h2");
-
-
-if(element && index < text.length){
-
-
-element.innerHTML += text.charAt(index);
-
-
-index++;
-
-
-setTimeout(typing,80);
-
-
-}
-
-
-}
+const images = document.querySelectorAll(".gallery img");
 
 
 
-window.onload=()=>{
+images.forEach(image=>{
 
 
-typing();
+image.addEventListener("mouseenter",()=>{
 
 
-};
-
-
-
-
-
-
-// Hover รูป Certificate
-
-
-const images =
-document.querySelectorAll(".certificate img");
-
-
-
-images.forEach(img=>{
-
-
-img.addEventListener("mouseenter",()=>{
-
-
-img.style.transform="scale(1.08)";
-
-
-img.style.transition=".4s";
+    image.style.transform =
+    "scale(1.08)";
 
 
 });
 
 
 
-img.addEventListener("mouseleave",()=>{
+image.addEventListener("mouseleave",()=>{
 
 
-img.style.transform="scale(1)";
+    image.style.transform =
+    "scale(1)";
 
 
 });
@@ -221,9 +123,11 @@ img.style.transform="scale(1)";
 
 
 
-// Welcome Message
+
+
+// Welcome Console
 
 
 console.log(
-"🩺 Welcome to Natthada Nursing Portfolio"
+"🩺 Welcome to NATTHADA Nursing Portfolio"
 );
