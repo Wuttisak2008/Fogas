@@ -698,6 +698,27 @@ grid-template-columns:1fr;
 
 }
 
+  /* SCROLL ANIMATION */
 
+
+section{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:1s ease;
+
+}
+
+
+
+section.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
 
 }
